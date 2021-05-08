@@ -1,4 +1,4 @@
-# 2.2 介绍下DenseNet
+# 介绍下DenseNet
 
 ## 1. 介绍
 
