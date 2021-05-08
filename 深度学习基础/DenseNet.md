@@ -13,7 +13,7 @@
 为了解决随着网络深度的增加，网络梯度消失的问题，在<code>ResNet</code>网络
 之后，科研界把研究重心放在通过更有效的跳跃连接的方法上。<code>DenseNet</code>系列网络延续这个思路，并做到了一个极致，就是直接将所有层都连接起来。<code>DenseNet</code>层连接方法示意图如图所示。
 
-![](https://files.mdnice.com/user/6935/d0d193fa-9ca7-41a6-9222-1e000e0425a6.png)
+![image](https://user-images.githubusercontent.com/47493620/117545970-ad8a4f80-b05a-11eb-9967-3b514d43cdf7.png)
 
 <code>VGG</code>系列网络，如果有$L$层，则就会有$L$个连接，而在<code>DenseNet</code>网络中，有$L$层，则会有$\frac{L(L+1)}{2}$ 个连接，即每一层的输入来自该层前面所有层的输出叠加。
 
@@ -27,7 +27,7 @@ Connection</code>具有正则化的效果，所以对过拟合有一定的抑制
 
 其中$x_{l}$是需要将$x_{0}, x_{1},…x_{l-1}$的特征中进行通道concatenation，就是在通道那一个维度进行合并处理。
 
- $\mathrm{x}_{\ell}=H_{\ell}\left(\left[\mathrm{x}_{0}, \mathrm{x}_{1}, \ldots, \mathrm{x}_{\ell-1}\right]\right)$
+$x_{l}=H_{l}([x_{0}, x_{1},...,x_{l-1}])$
 
 <code>DenseNet</code> 具有比传统卷积网络更少的参数，因为它不需要重新学习多余的<code>feature map</code>。传统的前馈神经网络可以视作在层与层之间传递状态的
 算法，每一层接收前一层的状态，然后将新的状态传递给下一层。这会改变状态，但是也传递了需要保留的信息。<code>ResNet</code>通过恒等映射来直接传递
