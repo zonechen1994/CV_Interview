@@ -12,3 +12,4 @@
 [一文了解激活函数](./深度学习基础/激活函数.md)  
 [DenseNet详解](./深度学习基础/DenseNet.md)  
 [常用指标](./深度学习基础/常用指标.md)
+[Softmax与Sigmoid的联系与区别](sigmoid与softmax的区别与联系.md)
