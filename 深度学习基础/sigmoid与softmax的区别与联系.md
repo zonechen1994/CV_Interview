@@ -55,7 +55,6 @@ def softmax( f ):
 
 ![image](https://user-images.githubusercontent.com/47493620/117547544-aff0a780-b062-11eb-8b98-c0b8154d1293.png)
 
-$$
 
 因此，不失一般性，扩展成矩阵形式则为：
 
