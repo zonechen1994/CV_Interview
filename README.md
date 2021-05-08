@@ -13,4 +13,5 @@
 [DenseNet详解](./深度学习基础/DenseNet.md)  
 [常用指标](./深度学习基础/常用指标.md)  
 [Softmax与Sigmoid的联系与区别](./深度学习基础/sigmoid与softmax的区别与联系.md)  
-[CV中的Attention](./深度学习基础/CV中的Attention.md)
+[CV中的Attention](./深度学习基础/CV中的Attention.md)  
+[resnet及其相关变种](./深度学习基础/resnet.md) 
