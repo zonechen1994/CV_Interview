@@ -53,31 +53,9 @@ def softmax( f ):
 
 针对$Softmax$函数的反向传播，这里给出手撕反传的推导过程，主要是分两种情况：
 
-(1)当 $i=j$ 时
+![image](https://user-images.githubusercontent.com/47493620/117547544-aff0a780-b062-11eb-8b98-c0b8154d1293.png)
+
 $$
-\begin{aligned}
-\frac{\partial y_{i}}{\partial x_{j}} &=\frac{\partial y_{i}}{\partial x_{i}} \\
-&=\frac{\partial}{\partial x_{i}}\left(\frac{e^{x_{i}}}{\sum_{k} e^{x_{k}}}\right) \\
-&=\frac{\left(e^{x_{i}}\right)^{\prime}\left(\sum_{k} e^{x_{k}}\right)-e^{x_{i}}\left(\sum_{k} e^{x_{k}}\right)^{\prime}}{\left(\sum_{k} e^{x_{k}}\right)^{2}} \\
-&=\frac{e^{x_{i}} \cdot\left(\sum_{k} e^{x_{k}}\right)-e^{x_{i}} \cdot e^{x_{i}}}{\left(\sum_{k} e^{x_{k}}\right)^{2}} \\
-&=\frac{e^{x_{i}} \cdot\left(\sum_{k} e^{x_{k}}\right)}{\left(\sum_{k} e^{x_{k}}\right)^{2}}-\frac{e^{x_{i}} \cdot e^{x_{i}}}{\left(\sum_{k} e^{x_{k}}\right)^{2}} \\
-&=\frac{e^{x_{i}}}{\sum_{k} e^{x_{k}}}-\frac{e^{x_{i}}}{\sum_{k} e^{x_{k}}} \cdot \frac{e^{x_{i}}}{\sum_{k} e^{x_{k}}} \\
-&=y_{i}-y_{i} \cdot y_{i} \\
-&=y_{i}\left(1-y_{i}\right)
-\end{aligned}
-$$
-(2)当 $i \neq j$ 时
-$$
-\begin{aligned}
-\frac{\partial y_{i}}{\partial x_{j}} &=\frac{\partial}{\partial x_{j}}\left(\frac{e^{x_{i}}}{\sum_{k} e^{x_{k}}}\right) \\
-&=\frac{\left(e^{x_{i}}\right)^{\prime}\left(\sum_{k} e^{x_{k}}\right)-e^{x_{i}}\left(\sum_{k} e^{x_{k}}\right)^{\prime}}{\left(\sum_{k} e^{x_{k}}\right)^{2}} \\
-&=\frac{0 \cdot\left(\sum_{k} e^{x_{k}}\right)-e^{x_{i}} \cdot e^{x_{j}}}{\left(\sum_{k} e^{x_{k}}\right)^{2}} \\
-&=\frac{-e^{x_{i}} \cdot e^{x_{j}}}{\left(\sum_{k} e^{x_{k}}\right)^{2}} \\
-&=-\frac{e^{x_{i}}}{\sum_{k} e^{x_{k}}} \cdot \frac{e^{x_{j}}}{\sum_{k} e^{x_{k}}} \\
-&=-y_{i} \cdot y_{j}
-\end{aligned}
-$$
-综上所述: $\quad \frac{\partial y_{i}}{\partial x_{j}}=\left\{\begin{array}{l}=y_{i}-y_{i} y_{i}, \text { 当 } i=j \\ =0-y_{i} \cdot y_{j}, \quad \text { 当 } i \neq j\end{array}\right.$
 
 因此，不失一般性，扩展成矩阵形式则为：
 
