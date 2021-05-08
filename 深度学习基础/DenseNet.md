@@ -13,7 +13,7 @@
 为了解决随着网络深度的增加，网络梯度消失的问题，在<code>ResNet</code>网络
 之后，科研界把研究重心放在通过更有效的跳跃连接的方法上。<code>DenseNet</code>系列网络延续这个思路，并做到了一个极致，就是直接将所有层都连接起来。<code>DenseNet</code>层连接方法示意图如图所示。
 
-![image-20210413215457971](/Users/zonechen/Library/Application Support/typora-user-images/image-20210413215457971.png)
+![](https://files.mdnice.com/user/6935/d0d193fa-9ca7-41a6-9222-1e000e0425a6.png)
 
 <code>VGG</code>系列网络，如果有$L$层，则就会有$L$个连接，而在<code>DenseNet</code>网络中，有$L$层，则会有$\frac{L(L+1)}{2}$ 个连接，即每一层的输入来自该层前面所有层的输出叠加。
 
@@ -23,11 +23,11 @@
 Connection</code>具有正则化的效果，所以对过拟合有一定的抑制作用，理由是<code>DenseNet</code>的参数量相比之前的网络大大减少，所以会类似正则化的作用，减轻过拟合现象。
 
 论文中给出的带有三个<code>Dense Block</code> 的<code>DenseNet</code> 结构图如下图所示，其中**pooling**层减少了特征的尺寸。同时，每个**Block**都需要维度上面对齐。
-![densene结构图](https://i.loli.net/2021/04/02/ujLQBvbaDXOZRAm.png)
+![](https://files.mdnice.com/user/6935/a2dce944-6649-4393-9c97-f023336c61cc.png)
 
 其中$x_{l}$是需要将$x_{0}, x_{1},…x_{l-1}$的特征中进行通道concatenation，就是在通道那一个维度进行合并处理。
 
-​																							$\mathrm{x}_{\ell}=H_{\ell}\left(\left[\mathrm{x}_{0}, \mathrm{x}_{1}, \ldots, \mathrm{x}_{\ell-1}\right]\right)$
+ $\mathrm{x}_{\ell}=H_{\ell}\left(\left[\mathrm{x}_{0}, \mathrm{x}_{1}, \ldots, \mathrm{x}_{\ell-1}\right]\right)$
 
 <code>DenseNet</code> 具有比传统卷积网络更少的参数，因为它不需要重新学习多余的<code>feature map</code>。传统的前馈神经网络可以视作在层与层之间传递状态的
 算法，每一层接收前一层的状态，然后将新的状态传递给下一层。这会改变状态，但是也传递了需要保留的信息。<code>ResNet</code>通过恒等映射来直接传递
@@ -43,7 +43,8 @@ Connection</code>具有正则化的效果，所以对过拟合有一定的抑制
 其中**DenseBlock**长下面这样：
 
 
-![](/Users/zonechen/Documents/百面AI/image.png)
+![](https://files.mdnice.com/user/6935/1533f418-78a2-4189-bfe6-210447ad4b1e.png)
+
 
 
 
@@ -53,7 +54,7 @@ Connection</code>具有正则化的效果，所以对过拟合有一定的抑制
 
 因为随着**DenseNet**不断加深，后面的输入层就是变得很大，在**DenseNet**中，我们使用了**BottleNeck**来减少计算量，其中主要就是加入了**1 x 1**卷积。如即**BN+ReLU+1x1 Conv+BN+ReLU+3x3 Conv**，称为DenseNet-B结构。其中1x1 Conv得到 ![[公式]](https://www.zhihu.com/equation?tex=4k) 个特征图它起到的作用是降低特征数量，从而提升计算效率。
 
-![image-20210413201811429](/Users/zonechen/Library/Application Support/typora-user-images/image-20210413201811429.png)
+![](https://files.mdnice.com/user/6935/1956ef5e-96b9-46bc-9266-9dc300aa38de.png)
 
 
 
