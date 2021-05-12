@@ -72,13 +72,8 @@ $$
 \mathbf{y}=f((\mathbf{W} \circ \mathbf{M}) \mathbf{x}), \quad M_{i, j} \sim \operatorname{Bernoulli}(p)
 $$
 $Testing$ $Phase$ :
-$$
+![image](https://user-images.githubusercontent.com/47493620/118006245-af675200-b37d-11eb-87cb-937a58ffd8db.png)
 \begin{array}{c}
-\mathbf{y}=(\mathbf{W} \mathbf{x}) \circ \hat{\mathbf{m}}(\mathbf{Z}) \\
-\text { where } \hat{m}_{i}(Z)=\frac{1}{Z} \sum_{z=0}^{Z} f\left(\hat{x}_{i, z}\right), \quad \hat{x}_{i, z} \sim \mathcal{N}\left(\mu_{i}, \sigma_{i}^{2}\right) \\
-\text { and } \boldsymbol{\mu}=p \mathbf{W} \mathbf{x}, \quad \boldsymbol{\sigma}^{2}=p(1-p)(\mathbf{W} \circ \mathbf{W})(\mathbf{x} \circ \mathbf{x}), \quad Z \in \mathbb{N}^{+}
-\end{array}
-$$
 
 其中具体的方案图就如下所示：
 
