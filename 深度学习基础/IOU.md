@@ -24,8 +24,7 @@
 
 $IOU$的数学公式为：
 $$
-
-I o U=\frac{\operatorname{S}\left(rec1\right) \cap \text { S }\left(rec2\right)}{S_{rec1}+S_{rec2}-\operatorname{S}\left(rec1\right) \bigcap \operatorname{S}\left(rec2\right)}
+I o U=\frac{S_(rec1) \cap S_(rec2)}{S_(rec1) + S_(rec2) - S_(rec1) \bigcap S_(rec2)}
 $$
 
 
