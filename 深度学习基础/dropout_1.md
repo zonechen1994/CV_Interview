@@ -140,6 +140,8 @@ $DropConnect$在进行$inference$时，需要对每个权重都进行$sample$，
 $Spatial$ $Dropout$目前主要也是分为$1D$, $2D$, $3D$的版本。先看下论文中$Spatial$ $Dropout$的示意图：
 
 ![](https://files.mdnice.com/user/6935/07d3cdec-aede-46be-95a1-90cfbf2da378.png)
+
+
 上图左边是传统$Dropout$示意图，右边是$Spatial$ $Dropout$的示意图。
 
 我们以$Spatial$ $Dropout$ $1d$来举例，它是一个文本，其维度($samples$,$sequence\_length$,$embedding\_dim$)。其中，
