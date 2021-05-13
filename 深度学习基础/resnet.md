@@ -95,8 +95,6 @@ ResNet残差块的结构如图所示。
 
 ## 4. ResNet的梯度公式推导
 
-FxF
-
 推导一下`ResNet`的前向与反向，步骤如下：
 
 
@@ -148,7 +146,7 @@ $\frac{\partial l o s s}{\partial x_{l}}=\frac{\partial \operatorname{los} s}{\p
 
 而除了像是从梯度反传的角度说明 <code>ResNet</code>比较好的解决了梯度弥散的问题，还有一些文章再探讨这些个问题。比如**“The Shattered Gradients Problem: If resnets are the answer, then what is the question?”**这篇工作中认为，即使BN过后梯度的模稳定在了正常范围内，但**梯度的相关性实际上是随着层数增加持续衰减的**。
 
-而经过证明，ResNet可以有效减少这种相关性的衰减。对于 $L$ 层的网络来说，没有残差表示的Plain Net梯度相关性的衰减在 $$\frac{1}{2^{L}}$$ ，而ResNet的衰减却只有$\frac{1}{\sqrt{L}}$ 。这也验证了ResNet论文本身的观点，网络训练难度随着层数增长的速度不是线性，而至少是多项式等级的增长
+而经过证明，ResNet可以有效减少这种相关性的衰减。对于 $L$ 层的网络来说，没有残差表示的Plain Net梯度相关性的衰减在 $\frac{1}{2^{L}}$ ，而ResNet的衰减却只有$\frac{1}{\sqrt{L}}$ 。这也验证了ResNet论文本身的观点，网络训练难度随着层数增长的速度不是线性，而至少是多项式等级的增长
 
 
 
