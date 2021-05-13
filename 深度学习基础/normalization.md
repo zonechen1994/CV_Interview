@@ -239,7 +239,7 @@ $SN$的具体做法可以从图中看出来：
 
 $SN$算法是为三组不同的 $\mu_{k}$ 以及$\sigma_{k}$ 分别学习三个总共6个标量值（ $w_{k}$ 和$w_{k}^{\prime}$ )，$h_{n c i j}$表示一个输入维度为$n,c,i,j$的特征图,$\hat{h}_{n c i j}$为归一化之后的特征图。
 
-$\hat{h}_{n c i j}=\gamma \frac{h_{n c i j}-\sum_{k \in \Omega} w_{k} \mu_{k}}{\sqrt{\sum_{k \in \Omega} w_{k}^{\prime} \sigma_{k}^{2}+\epsilon}}+\beta$
+![image](https://user-images.githubusercontent.com/47493620/118059370-f9265b80-b3c2-11eb-956a-d5ebe72b0e0c.png)
 
 其中 $\Omega=\{i n, l n, b n\}$ 。在计算 $\left(\mu_{\ln }, \sigma_{\ln }\right)$ 和 $\left(\mu_{b n}, \sigma_{b n}\right)$ 时，我们可以使用 $\left(\mu_{i n}, \sigma_{i n}\right)$ 作为中间变量以减少计算量。
 
