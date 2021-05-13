@@ -1,4 +1,4 @@
-大家好，我是灿视。
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247486240&idx=1&sn=b80be11f0d07b3af8544e17b827fe645&chksm=c241e86cf536617a01b624ff2a60d682bd419cdff0bd65a94ea39e70ae01ee1f38e997742352&scene=178&cur_album_id=1860258784426672132#rd)
 
 特征融合目前有两种常用的方式，一种是$add$操作，这种操作广泛运用于$ResNet$与$FPN$中。一种是$Concat$操作，这种操作最广泛的运用就是$UNet$，$DenseNet$等网络中。如下图所示：
 ![](https://files.mdnice.com/user/6935/870c20bd-c175-4d39-a11e-c588f000750f.png)
