@@ -253,10 +253,7 @@ $w_{k}$ 是通过softmax计算得到的激活函数：
 
 $w_{k}=\frac{e^{\lambda_{k}}}{\sum_{z \in \mathrm{in}, \ln , \mathrm{bn}} e^{\lambda_{z}}} \quad$ and $\quad k \in\{\mathrm{in}, \ln , \mathrm{bn}\}$
 
-其中 $\left\{\lambda_{\mathrm{in}}, \lambda_{\mathrm{bn}}, \lambda_{\mathrm{ln}}\right\}$ 是需要优化的3个参数，可以通过BP调整它们的值。同理我们也可以计算 $w^{\prime}$ 对应的参数值 $\left\{\lambda_{\text {in }}^{\prime}, \lambda_{\mathrm{bn}}^{\prime}, \lambda_{\ln }^{\prime}\right\}_{\text {。 }}$
-从上面的分析中我们可以看出, SN只增加了6个参数 $\Phi=\left\{\lambda_{\mathrm{in}}, \lambda_{\mathrm{bn}}, \lambda_{\ln }, \lambda_{\mathrm{in}}^{\prime}, \lambda_{\mathrm{bn}}^{\prime}, \lambda_{\ln }^{\prime}\right\}$ 。假设
-原始网络的参数集为 $\Theta$, 带有SN的网络的损失函数可以表示为 $\mathcal{L}(\Theta, \Phi)$, 他可以通过BP联合 优化 $\Theta$ 和 $\Phi$ 。
-
+![image](https://user-images.githubusercontent.com/47493620/118059543-5c17f280-b3c3-11eb-96a6-d85bf66c2026.png)
 
 
 代码如下：
