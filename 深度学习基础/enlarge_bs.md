@@ -1,4 +1,7 @@
 
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247486182&idx=1&sn=76901bb459989fb640185e7e50cb2678&chksm=c241e9aaf53660bca79cfbfe780f6f69a7813a842bc1b27ab786e657459619a76b8600067fad&scene=178&cur_album_id=1860258784426672132#rd)
+
+
 大家好，我是灿视。
 
 这道题是之前在我之前的那个**AttackOnAIer**上发过的一题，来自群友在商汤面试的真题，今天重新梳理下，供大家参考。
