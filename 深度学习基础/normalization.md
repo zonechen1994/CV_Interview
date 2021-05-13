@@ -92,7 +92,7 @@ def batchnorm_forward(x, gamma, beta, bn_param):
 
   下面来一个背诵版本：
 
- ![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/47493620/118059220-9208a700-b3c2-11eb-841f-73781fa93342.png)
 
 
 
