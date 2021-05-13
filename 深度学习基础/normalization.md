@@ -88,34 +88,9 @@ def batchnorm_forward(x, gamma, beta, bn_param):
 
 对于**BN**的反向传播，首先来推导下公式，这里先定义下一些参数变量：
 
-- $\delta$是一个$batch$中所有样本的方差。
+![image](https://user-images.githubusercontent.com/47493620/118059082-39d1a500-b3c2-11eb-80f8-75f2bf677451.png)
 
-- $\mu$是一个$batch$中所有样本的均值。
-
-- $\widehat{x}$为归一化后的样本数据。
-
-- $y_{i}$为输入样本 $x_{i}$经过尺度变化后的输出。
-
-- $\gamma$与$\beta$为尺度变化系数。
-
-- $\frac{\partial L}{\partial y}$是上一层的梯度，并且假设$x$,$y$都是$(N, D)$维。即有$N$个维度为$D$的样本，在$BN$的前向传播中$x_{i}$通过$\gamma$,$\beta$,$\hat x$将$x_{i}$变换为 $y_{i}$。那么反向传播是根据$\frac{\partial L}{\partial y_{i}}$ 求得 $\frac{\partial L}{\partial \gamma}, \frac{\partial L}{\partial \beta}, \frac{\partial L}{\partial x_{i}}$
-
-- 求解$\frac{\partial L}{\partial \gamma}$ 
-
-  $ \frac{\partial L}{\partial \gamma}=\sum_{i} \frac{\partial L}{\partial y_{i}} \frac{\partial y_{i}}{\partial \gamma}=\sum_{i} \frac{\partial L}{\partial y_{i}} \hat{x}$
-
-- 求解 $\frac{\partial L}{\partial \beta}$ 
-
-  $ \frac{\partial L}{\partial \beta}=\sum_{i} \frac{\partial L}{\partial y_{i}} \frac{\partial y_{i}}{\partial \beta}=\sum_{i} \frac{\partial L}{\partial y_{i}}$
-
-- 求解 $\frac{\partial L}{\partial x_{i}}$ 根据论文的公式和链式法则可得下面的等式:
-  $\frac{\partial L}{\partial x_{i}}=\frac{\partial L}{\partial \widehat{x_{i}}} \frac{\partial \widehat{x_{i}}}{\partial x_{i}}+\frac{\partial L}{\partial \sigma} \frac{\partial \sigma}{\partial x_{i}}+\frac{\partial L}{\partial \mu} \frac{\partial \mu}{\partial x_{i}}$ 我们这里又可以先求 $\frac{\partial L}{\partial \hat{x}}$
-  $\frac{\partial L}{\partial \hat{x}}=\frac{\partial L}{\partial y} \frac{\partial y}{\partial \hat{x}}=\frac{\partial L}{\partial y} \gamma(1)$
   $\frac{\partial L}{\partial \sigma}=\sum_{i} \frac{\partial L}{\partial y_{i}} \frac{\partial y_{i}}{\partial \hat{x}_{i}} \frac{\partial \hat{x}_{i}}{\partial \sigma}=-\frac{1}{2} \sum_{i} \frac{\partial L}{\partial \widehat{x_{i}}}\left(x_{i}-\mu\right)(\sigma+\varepsilon)^{-1.5}$ (2)
-  $\frac{\partial L}{\partial \mu}=\frac{\partial L}{\partial \hat{x}} \frac{\partial \hat{x}}{\partial \mu}+\frac{\partial L}{\partial \sigma} \frac{\partial \sigma}{\partial \mu}=\sum_{i} \frac{\partial L}{\partial \hat{x}_{i}} \frac{-1}{\sqrt{\sigma+\varepsilon}}+\frac{\partial L}{\partial \sigma} \frac{-2 \Sigma_{i}\left(x_{i}-\mu\right)}{N}(3)$ 
-
-- 有了 $(1),(2),(3)$,就可以求出 $\frac{\partial L}{\partial x_{i}}$
-  $\frac{\partial L}{\partial x_{i}}=\frac{\partial L}{\partial \widehat{x}_{i}} \frac{\partial \widehat{x_{i}}}{\partial x_{i}}+\frac{\partial L}{\partial \sigma} \frac{\partial \sigma}{\partial x_{i}}+\frac{\partial L}{\partial \mu} \frac{\partial \mu}{\partial x_{i}}=\frac{\partial L}{\partial \hat{x}_{i}} \frac{1}{\sqrt{\sigma+\varepsilon}}+\frac{\partial L}{\partial \sigma} \frac{2\left(x_{i}-\mu\right)}{N}+\frac{\partial L}{\partial \mu} \frac{1}{N}$
 
   
 
