@@ -241,7 +241,7 @@ $SN$算法是为三组不同的 $\mu_{k}$ 以及$\sigma_{k}$ 分别学习三个�
 
 ![image](https://user-images.githubusercontent.com/47493620/118059370-f9265b80-b3c2-11eb-956a-d5ebe72b0e0c.png)
 
-其中 $\Omega=\{i n, l n, b n\}$ 。在计算 $\left(\mu_{\ln }, \sigma_{\ln }\right)$ 和 $\left(\mu_{b n}, \sigma_{b n}\right)$ 时，我们可以使用 $\left(\mu_{i n}, \sigma_{i n}\right)$ 作为中间变量以减少计算量。
+其中 $\Omega=\{i n, l n, b n\}$ 。在计算 $(\mu_{\ln }, \sigma_{\ln })$ 和 $(\mu_{b n}, \sigma_{b n})$ 时，我们可以使用 $(\mu_{i n}, \sigma_{i n})$ 作为中间变量以减少计算量。
 
 $\mu_{\mathrm{in}}=\frac{1}{H W} \sum_{i, j}^{H, W} h_{n c i j}, \quad \sigma_{\mathrm{in}}^{2}=\frac{1}{H W} \sum_{i, j}^{H, W}\left(h_{n c i j}-\mu_{\mathrm{in}}\right)^{2}$
 $\mu_{\mathrm{ln}}=\frac{1}{C} \sum_{c=1}^{C} \mu_{\mathrm{in}}, \quad \sigma_{\mathrm{ln}}^{2}=\frac{1}{C} \sum_{c=1}^{C}\left(\sigma_{\mathrm{in}}^{2}+\mu_{\mathrm{in}}^{2}\right)-\mu_{\mathrm{ln}}^{2}$
