@@ -96,7 +96,7 @@ def batchnorm_forward(x, gamma, beta, bn_param):
 
 - $y_{i}$为输入样本 $x_{i}$经过尺度变化后的输出。
 
-- $\$与$\$为尺度变化系数。
+- $\gamma$与$\beta$为尺度变化系数。
 
 - $\frac{\partial L}{\partial y}$是上一层的梯度，并且假设$x$,$y$都是$(N, D)$维。即有$N$个维度为$D$的样本，在$BN$的前向传播中$x_{i}$通过$\gamma$,$\beta$,$\hat x$将$x_{i}$变换为 $y_{i}$。那么反向传播是根据$\frac{\partial L}{\partial y_{i}}$ 求得 $\frac{\partial L}{\partial \gamma}, \frac{\partial L}{\partial \beta}, \frac{\partial L}{\partial x_{i}}$
 
