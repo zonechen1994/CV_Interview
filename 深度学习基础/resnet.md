@@ -1,4 +1,7 @@
-# 2.1 具体阐述一下ResNet网络的细节，你知道的ResNet网络的相关变种有哪些？
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485417&idx=1&sn=e459bb2d9792e699d369dbc4e36370af&chksm=c241e4a5f5366db3330484db4a99a0c6ddf977676a21b34765d6caad55552f3ea42039b353c7&scene=178&cur_album_id=1860258784426672132#rd)
+
+
+# 具体阐述一下ResNet网络的细节，你知道的ResNet网络的相关变种有哪些？
 
 
 
