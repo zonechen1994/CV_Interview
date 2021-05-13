@@ -1,4 +1,7 @@
 
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247486168&idx=1&sn=ce1920cf5ff9a78d2f24c4ad65632b06&chksm=c241e994f5366082788b9fe906e93fec7e92da55a66aaab342d98eaa7c39ef599114dc0740b5&scene=178&cur_album_id=1860258784426672132#rd)
+
+
 ### Stochastic Depth
 $Stochastic$ $Depth$是采取类似于$Dropout$的思路，在$ResNet$块上随机进行对模块的删除，进而提高对模型的泛化能力。
 
