@@ -11,7 +11,7 @@
 
 其中汇总的形式如下图所示：
 
-![image](https://user-images.githubusercontent.com/47493620/118060379-3e4b8d00-b3c5-11eb-86ad-e6f56ebcd689.png)
+![image](https://user-images.githubusercontent.com/47493620/118060379-3e4b8d00-b3c5-11eb-86ad-e6f56ebcd689.png  =200x200)
 
 
 ## 具体题目
