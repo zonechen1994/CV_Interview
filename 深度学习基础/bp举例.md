@@ -1,5 +1,8 @@
 # 2.4 简单阐述一下BP的过程？
 
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485716&idx=2&sn=24fd90e81e4265a7b0e7eaf24ae71ce1&chksm=c241ea58f536634ee9d42e19234c79cca4584e066ce5904ddd67d757ccb1dfc3a1fae0481e4f&scene=178&cur_album_id=1860258784426672132#rd)
+
+
 ## 1.基本概念
 
 BP(Back Propogation)算法是一种最有效的学习方法，主要特点是**信号前向传递，而误差后向传播**，通过不断调节网络权重值，使得网络的最终输出与期望输出尽可能接近，以达到训练的目的。前向过程中通过与正确标签计算损失，反向传递损失，更新参数，优化至最后的参数。
