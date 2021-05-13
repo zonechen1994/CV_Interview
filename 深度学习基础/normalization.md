@@ -22,7 +22,8 @@
 
 - 沿着通道计算每个$batch$的方差$\delta^{2}=\frac{1}{m} \sum_{i=1}^{m}\left(x_{i}-\mu_{\mathcal{B}}\right)^{2}$。
 
-- 对x做归一化, $\widehat{x}_{i} \leftarror \frac{x_{i}-\mu_{\mathcal{B}}}{\sqrt{\sigma_{\mathcal{B}}^{2}+\epsilon}}$
+- 对x做归一化, ![image](https://user-images.githubusercontent.com/47493620/118058914-dd6e8580-b3c1-11eb-8f27-8107dba60cae.png)
+
 
 - 加入缩放和平移变量$\gamma$和$\beta$ ,归一化后的值，$y_{i} \leftarrow \gamma \widehat{x}_{i}+\beta$
 
