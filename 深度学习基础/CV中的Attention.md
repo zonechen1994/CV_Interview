@@ -1,8 +1,6 @@
-大家好，我是灿视。
-
-在深度学习领域中，存在很多专业名词，第一次看的时候总会很懵逼～后面慢慢看得时候才会有那么感觉，但是总觉得差点意思。今天我们要说的一个专业名词，就叫做**Attention**机制！
 
 
+[如公式与图片显示不好，点此阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485862&idx=1&sn=b7e775458a0d5a22a565896864de47dd&chksm=c241eaeaf53663fc0d3f6c967174342787458e9fdf7bcd8a0536b088cc9b8ac7eb22b2f3790a&scene=178&cur_album_id=1860258784426672132#rd)
 
 ## 1. 直观理解Attention
 
