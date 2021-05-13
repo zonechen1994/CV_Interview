@@ -3,7 +3,7 @@
 
 # Normalization汇总！！！
 
-[百面计算机视觉第三版实时汇总](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkzNDIxMzE1NQ==&action=getalbum&album_id=1860258784426672132&scene=173&from_msgid=2247485568&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485824&idx=1&sn=49aa89fd0e866d24e9923a5d7d5dce69&chksm=c241eaccf53663daa6d07d7ee9763b5c4d5ae17c562f4b35d625be0b0328b8cab12844b1fbee&scene=178&cur_album_id=1860258784426672132#rd)
 
 ## 1. 对数据部分做归一化
 
