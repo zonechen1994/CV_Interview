@@ -86,17 +86,13 @@ def batchnorm_forward(x, gamma, beta, bn_param):
 
 
 
-对于**BN**的反向传播，首先来推导下公式，这里先定义下一些参数变量：
 
 ![image](https://user-images.githubusercontent.com/47493620/118059082-39d1a500-b3c2-11eb-80f8-75f2bf677451.png)
-
-  $\frac{\partial L}{\partial \sigma}=\sum_{i} \frac{\partial L}{\partial y_{i}} \frac{\partial y_{i}}{\partial \hat{x}_{i}} \frac{\partial \hat{x}_{i}}{\partial \sigma}=-\frac{1}{2} \sum_{i} \frac{\partial L}{\partial \widehat{x_{i}}}\left(x_{i}-\mu\right)(\sigma+\varepsilon)^{-1.5}$ (2)
-
   
 
   下面来一个背诵版本：
 
-  $$\begin{aligned} \frac{\partial \ell}{\partial \widehat{x}_{i}} &=\frac{\partial \ell}{\partial y_{i}} \cdot \gamma \\ \frac{\partial \ell}{\partial \sigma_{\mathcal{B}}^{2}} &=\sum_{i=1}^{m} \frac{\partial \ell}{\partial \widehat{x}_{i}} \cdot\left(x_{i}-\mu_{\mathcal{B}}\right) \cdot \frac{-1}{2}\left(\sigma_{\mathcal{B}}^{2}+\epsilon\right)^{-3 / 2} \\ \frac{\partial \ell}{\partial \mu_{\mathcal{B}}} &=\left(\sum_{i=1}^{m} \frac{\partial \ell}{\partial \widehat{x}_{i}} \cdot \frac{-1}{\sqrt{\sigma_{\mathcal{B}}^{2}+\epsilon}}\right)+\frac{\partial \ell}{\partial \sigma_{\mathcal{B}}^{2}} \cdot \frac{\sum_{i=1}^{m}-2\left(x_{i}-\mu_{\mathcal{B}}\right)}{m} \\ \frac{\partial \ell}{\partial x_{i}} &=\frac{\partial \ell}{\partial \widehat{x}_{i}} \cdot \frac{1}{\sqrt{\sigma_{\mathcal{B}}^{2}+\epsilon}}+\frac{\partial \ell}{\partial \sigma_{\mathcal{B}}^{2}} \cdot \frac{2\left(x_{i}-\mu_{\mathcal{B}}\right)}{m}+\frac{\partial \ell}{\partial \mu_{\mathcal{B}}} \cdot \frac{1}{m} \\ \frac{\partial \ell}{\partial \gamma} &=\sum_{i=1}^{m} \frac{\partial \ell}{\partial y_{i}} \cdot \widehat{x}_{i} \\ \frac{\partial \ell}{\partial \beta} &=\sum_{i=1}^{m} \frac{\partial \ell}{\partial y_{i}} \end{aligned}$$
+ ![Uploading image.png…]()
 
 
 
