@@ -1,6 +1,10 @@
 
 
 ## 我丢！Drop就完事了！（上）
+
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247486110&idx=1&sn=d2a9c6a4c80fb6f9894618440e03aff9&chksm=c241e9d2f53660c41550815280236435dbce523bb04188511e03ddd203333b3c10013fef65dc&scene=178&cur_album_id=1860258784426672132#rd)
+
+
 大家好，我是灿视。
 
 今天我们来以**Dropout**为切入点，汇总下那些各种**Drop**的操作。本片是**上篇**，还有**续集**，**欢迎关注我们，追更《百面计算机视觉第三版》哦！**
