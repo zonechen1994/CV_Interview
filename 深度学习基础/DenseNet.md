@@ -1,5 +1,6 @@
 # 介绍下DenseNet
 
+[阅读原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485568&idx=1&sn=0c8cba90400840f2cf17dd3e3f58b42d&chksm=c241ebccf53662da3723f5e6ee6a310a8b1e37d37b33e65d6d38d87eaddf8627626bb54a2267&scene=178&cur_album_id=1860258784426672132#rd)
 ## 1. 介绍
 
 在以往的网络都是从要么深（比如<code>ResNet</code>，解决了网络深时候的梯度消失问题）要么宽（比如<code>GoogleNet</code>的<code>Inception</code>）的网络，而作者则是从<code>feature</code>入手，通过对<code>feature</code>的极致利用达到更好的效果和更少的参数。
