@@ -410,45 +410,19 @@ $$
   &=\lambda_{1}^{k}\left[x_{1} \nu_{1}+x_{2}\left(\frac{\lambda_{2}}{\lambda_{1}}\right)^{k} \nu_{2}+\ldots+x_{n}\left(\frac{\lambda_{n}}{\lambda_{1}}\right)^{k} \nu_{n}\right]
   \end{aligned}
   $$
-  由于$\lambda_{1}, \lambda_{2}, …\lambda_{n}$（不考虑两个特征值相等的情况，这种情况比较少见！）。可知，经过 $k$ 次迭代后，则：
-  $$
-  \lim _{k \rightarrow+\infty}\left(\lambda_{i} / \lambda_{1}\right)^{k}=0(i \neq 1)
-  $$
-  也因此：
-  $$
-  \lim _{k \rightarrow+\infty} A^{k} x=\lambda_{1}^{k} x_{1} \nu_{1}
-  $$
-  也就是说，经过$k$ 次迭代后，我们将得到矩阵主特征向量的线性放缩，只要把这个向量归一化，就得到了该矩阵的单位主特征向量，进而可以解出矩阵的主特征值。
+  ![image](https://user-images.githubusercontent.com/47493620/118059645-971a2600-b3c3-11eb-9a8a-81f4249082aa.png)
 
-  而我们在神经网络中，想求的是权重矩阵 $W$ 的最大奇异值，根据上面几节的推导，知道这个奇异值正是最大特征值的开方。因此，我们可以采用$ power$  $iteration$ 的方式求解的单位主特征向量，进而求出最大特征值$\lambda_{1}$。论文中给出的算法是这样的：
-  $$
-  \tilde{v}:=\frac{W^{T} \tilde{u}}{\left\|W^{T} \tilde{u}\right\|_{2}}  \\
-  
-  \tilde{u}:=\frac{W \tilde{v}}{\|W \tilde{v}\|_{2}}
-  $$
 
-​           那么，当知道单位主特征向量之后，如何求出最大的特征值$\lambda_{1}$。
-
-​            $$W^{T} W \tilde{v}=\lambda_{1} v,\|v\|_{2}=1 $$            
-
-​        $
-​    \begin{array}{l}
-\Rightarrow \tilde{v}^{T} W^{T} W \tilde{v}=\lambda_{1} v^{T} v=\lambda_{1} \\
-\Rightarrow\langle W \tilde{v}, W \tilde{v}\rangle=\lambda_{1} \\
-\Rightarrow\|W \tilde{v}\|_{2}=\sqrt{\lambda_{1}}
-\end{array}
-$
-
-​        同样，我们可以得到：
+同样，我们可以得到：
 
 ![](https://files.mdnice.com/user/6935/af0fae69-aa01-42c1-bc7d-6f9243a528cf.png)
 
 
-​            具体的代码实现过程中，可以随机初始化一个噪声向量代入公式 (13) 。由于每次更新参数的$ step$ $ size$ 很小，矩阵 W 的参数变化都很小，矩阵可以长时间维持不变。
+具体的代码实现过程中，可以随机初始化一个噪声向量代入公式 (13) 。由于每次更新参数的$ step$ $ size$ 很小，矩阵 W 的参数变化都很小，矩阵可以长时间维持不变。
 
-​            因此，可以把参数更新的 $step$ 和求矩阵最大奇异值的$ step$ 融合在一起，即每更新一次权重$ W$ ，更新一次和，并将矩阵归一化一次。
+因此，可以把参数更新的 $step$ 和求矩阵最大奇异值的$ step$ 融合在一起，即每更新一次权重$ W$ ，更新一次和，并将矩阵归一化一次。
 
-​            代码如下：
+代码如下：
 
 ```python
 import torch
