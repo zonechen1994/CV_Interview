@@ -1,3 +1,6 @@
+[阅文原文](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485960&idx=1&sn=335d218c725fc353a37cd532d7d12af6&chksm=c241e944f5366052cc9f5a5695c4c72c3f00592c78575e30cba16a8f2c14f24069b9cd818553&token=1307926982&lang=zh_CN#rd)
+
+
 ## Softmax与Sigmoid有哪些区别与联系？
 
 ### 1. Sigmoid函数
