@@ -14,9 +14,26 @@
 
 ## 具体题目
 ### 1. 深度学习相关
-[一文了解激活函数](./深度学习基础/激活函数.md)   
-[DenseNet详解](./深度学习基础/DenseNet.md)  
-[常用评价指标](./深度学习基础/常用指标.md)  
-[Softmax与Sigmoid的联系与区别](./深度学习基础/sigmoid与softmax的区别与联系.md)  
+[一文了解激活函数](./深度学习基础/激活函数.md)    
+[DenseNet详解](./深度学习基础/DenseNet.md)    
+[常用评价指标](./深度学习基础/常用指标.md)   
+[Softmax与Sigmoid的联系与区别](./深度学习基础/sigmoid与softmax的区别与联系.md)   
 [CV中的Attention](./深度学习基础/CV中的Attention.md)  
-[resnet及其相关变种](./深度学习基础/resnet.md) 
+[resnet及其相关变种](./深度学习基础/resnet.md)  
+[Drop正则化(1)](./深度学习基础/dropout_1.md)  
+[Drop正则化(2)](./深度学习基础/dropout_2.md)  
+[手撕反向传播](./深度学习基础/bp举例.md)  
+[显存有限，如何增加训练时的Batch Size？](./深度学习基础/enlarge_bs.md)  
+[很全的Normalization汇总哦～](./深度学习基础/normalization.md)  
+
+
+
+
+### 2. 传统图像处理
+[图像的颜色空间](./传统cv/颜色空间.md)
+
+### 3. C++/Python工程篇
+待补充
+
+### 4. 手撕代码汇总
+待补充
