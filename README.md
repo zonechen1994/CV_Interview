@@ -1,6 +1,6 @@
 # CV_Interview
 
-## 特别感受小伙伴们：
+## 特别感谢小伙伴们：
 - DarrenZhang
 - BJWang
 - 小亦
