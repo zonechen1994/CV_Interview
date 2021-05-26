@@ -65,7 +65,7 @@
 
 
 ### 4. 图像分类与图像分割篇
-[Inception V1](./图像分割与图像分类/InceptionV1.md)
+[Inception V1](./图像分割与图像分类/InceptionV1.md)  
 [Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)
 
 
