@@ -4,8 +4,7 @@
 
 **具体的步骤如下**：
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210525171126839.png" alt="image-20210525171126839" style="zoom:50%;" />
-
+![image](https://user-images.githubusercontent.com/47493620/119690666-78646680-be7c-11eb-8499-d757d6b7fa66.png)
 
 
 1. 如图所示，我们有$6$个带置信率的$region$ $proposals$，我们先预设一个$IOU$的阈值如$0.7$。
@@ -59,7 +58,4 @@ def NMS(dets, thresh):
 ```
 
 运行后，则删除了多余的框，结果如图所示：
-
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210525171238666.png" alt="image-20210525171238666" style="zoom:50%;" />
-
-###
+![image](https://user-images.githubusercontent.com/47493620/119690751-8b773680-be7c-11eb-88d3-4757632e1904.png)
