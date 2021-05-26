@@ -60,16 +60,13 @@
 ### 3. C++/Python工程篇
 
 [指针与引用的区别](./C++与Python等工程篇/Pointer&References.md)
-
-[多态与继承之间的区别]('./C++与Python等工程篇/Inheritance&Polymorphism.md')   
+[多态与继承之间的区别](./C++与Python等工程篇/Inheritance&Polymorphism.md)   
 
 
 
 ### 4. 图像分类与图像分割篇
-
-[Inception V1]('./图像分割与图像分类/InceptionV1.md')
-
-[Deep Lab v1~V3+]('./图像分割与图像分类/DeepLab.md')
+[Inception V1](./图像分割与图像分类/InceptionV1.md)
+[Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)
 
 
 
