@@ -61,20 +61,21 @@
 
 ### 3. C++/Python工程篇
 
-[指针与引用的区别](./C++与Python等工程篇/Pointer&References.md)
+[指针与引用的区别](./C++与Python等工程篇/Pointer&References.md)  
 [多态与继承之间的区别](./C++与Python等工程篇/Inheritance&Polymorphism.md)   
 
 
 
 ### 4. 图像分类与图像分割篇
 [Inception V1](./图像分割与图像分类/InceptionV1.md)  
-[Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)
+[Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)  
+[介绍下FCN与UNet](./图像分割与图像分类/fcn_unet.md)  
+[Inception系列之V1与V2](./图像分割与图像分类/InceptionV2V3.md)
 
 
 
 ### 5. 目标检测与关键点检测篇
-
-待补充～
+[说下NMS？](./目标检测与关键点检测/nms.md). 
 
 ### 6. 手撕代码汇总
 
