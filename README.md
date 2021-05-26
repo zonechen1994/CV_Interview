@@ -12,6 +12,8 @@
 
 这里面的面经有很多公式，最好的方案，是采用Chrome浏览器，再添加[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)拓展程序。
 
+**建议下载在本地观看，每天可以pull拉取最新的仓库哦！**
+
 **我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
 
 
@@ -22,11 +24,11 @@
 
 ## 一. CV学习路线(如果想从事CV行业，那么可以参考这个学习路线)
 
-<img src="https://files.mdnice.com/user/6935/a0fb6e5a-da21-4142-b10c-518ac771ed4c.png" alt="必备素养" style="zoom:50%;" />
+![CV从业人员必会技能！！](https://user-images.githubusercontent.com/47493620/119588215-e8360b00-be02-11eb-8802-f1a840487c85.png)
 
 其中我整理相对应的**视频课**与**电子书**的**学习路线资料**，百度网盘链接：[下载地址](https://pan.baidu.com/s/18xxCQftI5GOCfZOB3VLTIQ)，密码：nj6k
 
-**若地址，可以加我微信，我发给你就好～**
+**若地址失效，可以加我微信，我发给你就好～**
 
 
 
@@ -60,16 +62,13 @@
 ### 3. C++/Python工程篇
 
 [指针与引用的区别](./C++与Python等工程篇/Pointer&References.md)
-
-[多态与继承之间的区别]('./C++与Python等工程篇/Inheritance&Polymorphism.md')   
+[多态与继承之间的区别](./C++与Python等工程篇/Inheritance&Polymorphism.md)   
 
 
 
 ### 4. 图像分类与图像分割篇
-
-[Inception V1]('./图像分割与图像分类/InceptionV1.md')
-
-[Deep Lab v1~V3+]('./图像分割与图像分类/DeepLab.md')
+[Inception V1](./图像分割与图像分类/InceptionV1.md)  
+[Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)
 
 
 
