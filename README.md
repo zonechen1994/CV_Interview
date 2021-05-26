@@ -18,13 +18,20 @@
 ![qrcode_for_gh_13e431216f44_344 (3)](https://user-images.githubusercontent.com/47493620/118230064-9ff02200-b4bf-11eb-8cfb-501824bf4ecf.jpg)
 
 
-其中百面计算机视觉我们汇总于此，在**Github**中如果图片或者公式发现出问题了，请你点击去原文地址哈～ 这里给出汇总的地址：
+其中百面计算机视觉我们汇总于此，在**Github**中如果图片或者公式发现出问题了，请你点击去原文地址哈～ 这里给出汇总的地址：[百面计算机视觉汇总贴](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkzNDIxMzE1NQ==&action=getalbum&album_id=1860258784426672132&scene=173&from_msgid=2247485568&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
+
+## 一. CV学习路线(如果想从事CV行业，那么可以参考这个学习路线)
+
+<img src="https://files.mdnice.com/user/6935/a0fb6e5a-da21-4142-b10c-518ac771ed4c.png" alt="必备素养" style="zoom:50%;" />
+
+其中我整理相对应的**视频课**与**电子书**的**学习路线资料**，百度网盘链接：[下载地址](https://pan.baidu.com/s/18xxCQftI5GOCfZOB3VLTIQ)，密码：nj6k
+
+**若地址，可以加我微信，我发给你就好～**
 
 
-[百面计算机视觉汇总贴](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkzNDIxMzE1NQ==&action=getalbum&album_id=1860258784426672132&scene=173&from_msgid=2247485568&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
 
+## 二. 百面计算机视觉
 
-## 具体题目
 ### 1. 深度学习相关
 [一文了解激活函数](./深度学习基础/激活函数.md)    
 [DenseNet详解](./深度学习基础/DenseNet.md)    
@@ -51,15 +58,38 @@
 
 
 ### 3. C++/Python工程篇
+
 [指针与引用的区别](./C++与Python等工程篇/Pointer&References.md)
 
-### 4. 手撕代码汇总
-待补充
+[多态与继承之间的区别]('./C++与Python等工程篇/Inheritance&Polymorphism.md')   
 
+
+
+### 4. 图像分类与图像分割篇
+
+[Inception V1]('./图像分割与图像分类/InceptionV1.md')
+
+[Deep Lab v1~V3+]('./图像分割与图像分类/DeepLab.md')
+
+
+
+### 5. 目标检测篇
+
+待补充～
+
+### 6. 手撕代码汇总
+
+待补充～
+
+
+
+### 三. 如何写简历？
+
+[简历模板与写简历的套路总结](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485095&idx=1&sn=b3fa4c5e87d2c883e4234a512b03f925&chksm=c241e5ebf5366cfd0e1e878d6f81cc441c39da645f53f470547a6e1ca8fad20d3de16f3055bb&token=507085599&lang=zh_CN#rd)
 
 ### 关于我
 
-待入学的博士生，曾经在腾讯与百度有过实习工作经历，在小公司带过团队。连续在19，20年推出过《百面计算机视觉》受到了一致好评。欢迎各位私信我，**加入《百面计算机视觉第三版》交流群～**
+一边创业，一边读博的前百度与腾讯算法工程师！奶爸一枚！欢迎关注我，教你拿**Offer！**
 
 
 ![欢迎加我微信](https://user-images.githubusercontent.com/47493620/118210526-14fe3000-b49d-11eb-8be1-ecc355fb11e2.jpeg)
