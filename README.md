@@ -22,7 +22,7 @@
 
 ## 一. CV学习路线(如果想从事CV行业，那么可以参考这个学习路线)
 
-<img src="https://files.mdnice.com/user/6935/a0fb6e5a-da21-4142-b10c-518ac771ed4c.png" alt="必备素养" style="zoom:50%;" />
+![CV从业人员必会技能！！](https://user-images.githubusercontent.com/47493620/119588215-e8360b00-be02-11eb-8802-f1a840487c85.png)
 
 其中我整理相对应的**视频课**与**电子书**的**学习路线资料**，百度网盘链接：[下载地址](https://pan.baidu.com/s/18xxCQftI5GOCfZOB3VLTIQ)，密码：nj6k
 
