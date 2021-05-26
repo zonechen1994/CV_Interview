@@ -12,6 +12,8 @@
 
 这里面的面经有很多公式，最好的方案，是采用Chrome浏览器，再添加[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)拓展程序。
 
+**建议下载在本地观看，每天可以pull拉取最新的仓库哦！**
+
 **我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
 
 
