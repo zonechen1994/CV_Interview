@@ -69,11 +69,14 @@
 
 
 ### 4. 图像分类与图像分割篇
-[Inception V1](./图像分割与图像分类/InceptionV1.md)  
+[Inception V1](./图像分割与图像分类/InceptionV1.md) 
+[InceptionV2V3](./图像分割与图像分类/InceptionV2V3.md)  
+[Inception4](./图像分割与图像分类/Inception4.md)  
 [Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)  
 [介绍下FCN与UNet](./图像分割与图像分类/fcn_unet.md)  
 [Inception系列之V1与V2](./图像分割与图像分类/InceptionV2V3.md)  
 [空洞卷积](./图像分割与图像分类/空洞卷积.md)  
+
 
 
 
