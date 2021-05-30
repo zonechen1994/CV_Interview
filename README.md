@@ -1,6 +1,6 @@
 # CV_Interview
 
-## 特别感谢小伙伴们：
+## 特别感谢小伙伴们(排名不分先后，都是精英们！)：
 - **DarrenZhang**
 - **BJWang**
 - **小亦**
@@ -10,11 +10,13 @@
 
 这里是《百面计算机视觉第三版》面试题的更新，以往两版帮助了很多同学。这一版本，希望可以帮助更多的同学拿到**Dream offer。**
 
-这里面的面经有很多公式，最好的方案，是采用Chrome浏览器，再添加[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)拓展程序。
+## 如何看面经呢？
 
-**建议下载在本地观看，每天可以pull拉取最新的仓库哦！**
+- 这里面的面经有很多公式，最好的方案，是采用Chrome浏览器，再添加[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)拓展程序。
 
-**我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
+- **建议下载在本地观看，每天可以pull拉取最新的仓库哦！**
+
+- **我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
 
 
 ![qrcode_for_gh_13e431216f44_344 (3)](https://user-images.githubusercontent.com/47493620/118230064-9ff02200-b4bf-11eb-8cfb-501824bf4ecf.jpg)
@@ -22,9 +24,11 @@
 
 其中百面计算机视觉我们汇总于此，在**Github**中如果图片或者公式发现出问题了，请你点击去原文地址哈～ 这里给出汇总的地址：[百面计算机视觉汇总贴](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkzNDIxMzE1NQ==&action=getalbum&album_id=1860258784426672132&scene=173&from_msgid=2247485568&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
 
-## 一. CV学习路线(如果想从事CV行业，那么可以参考这个学习路线)
+## 一. CV学习路线(没文章，学校不好，还想做cv算法？那就看看这个！)
 
 ![CV从业人员必会技能！！](https://user-images.githubusercontent.com/47493620/119588215-e8360b00-be02-11eb-8802-f1a840487c85.png)
+
+我写了一篇公众号博文：[没文章，没背景，想做CV？那就按这个干！](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485889&idx=1&sn=cc9e77174891a876264d087ba250c818&chksm=c241ea8df536639bb777b325bce49ef181d4ab2ea3f781b30ea964ae120e74f986ddbddbff0d&token=1223742475&lang=zh_CN#rd)
 
 其中我整理相对应的**视频课**与**电子书**的**学习路线资料**，百度网盘链接：[下载地址](https://pan.baidu.com/s/18xxCQftI5GOCfZOB3VLTIQ)，密码：nj6k
 
@@ -89,9 +93,9 @@
 
 [简历模板与写简历的套路总结](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485095&idx=1&sn=b3fa4c5e87d2c883e4234a512b03f925&chksm=c241e5ebf5366cfd0e1e878d6f81cc441c39da645f53f470547a6e1ca8fad20d3de16f3055bb&token=507085599&lang=zh_CN#rd)
 
-### 关于我
+### 四. 关于我
 
-一边创业，一边读博的前百度与腾讯算法工程师！奶爸一枚！欢迎关注我，教你拿**Offer！**
+**双非材料专业跨行人工智能，英年早婚，百度与腾讯退堂鼓首席鼓手。目前在复旦全日制读博，也在一边搞钱的帅比。 没啥本事，也就时间管理比较强，执行力还ok。欢迎加我微信，讨论人生～**
 
 
 ![欢迎加我微信](https://user-images.githubusercontent.com/47493620/118210526-14fe3000-b49d-11eb-8be1-ecc355fb11e2.jpeg)
