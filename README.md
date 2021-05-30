@@ -10,11 +10,13 @@
 
 这里是《百面计算机视觉第三版》面试题的更新，以往两版帮助了很多同学。这一版本，希望可以帮助更多的同学拿到**Dream offer。**
 
-这里面的面经有很多公式，最好的方案，是采用Chrome浏览器，再添加[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)拓展程序。
+## 如何看面经呢？
 
-**建议下载在本地观看，每天可以pull拉取最新的仓库哦！**
+- 这里面的面经有很多公式，最好的方案，是采用Chrome浏览器，再添加[GitHub with MathJax](https://chrome.google.com/webstore/detail/github-with-mathjax/ioemnmodlmafdkllaclgeombjnmnbima/related)拓展程序。
 
-**我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
+- **建议下载在本地观看，每天可以pull拉取最新的仓库哦！**
+
+- **我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
 
 
 ![qrcode_for_gh_13e431216f44_344 (3)](https://user-images.githubusercontent.com/47493620/118230064-9ff02200-b4bf-11eb-8cfb-501824bf4ecf.jpg)
