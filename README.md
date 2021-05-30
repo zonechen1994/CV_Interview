@@ -28,7 +28,8 @@
 
 ![CV从业人员必会技能！！](https://user-images.githubusercontent.com/47493620/119588215-e8360b00-be02-11eb-8802-f1a840487c85.png)
 
-我写了一篇公众号博文：
+我写了一篇公众号博文：[没文章，没背景，想做CV？那就按这个干！](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247485889&idx=1&sn=cc9e77174891a876264d087ba250c818&chksm=c241ea8df536639bb777b325bce49ef181d4ab2ea3f781b30ea964ae120e74f986ddbddbff0d&token=1223742475&lang=zh_CN#rd)
+
 其中我整理相对应的**视频课**与**电子书**的**学习路线资料**，百度网盘链接：[下载地址](https://pan.baidu.com/s/18xxCQftI5GOCfZOB3VLTIQ)，密码：nj6k
 
 **若地址失效，可以加我微信，我发给你就好～**
