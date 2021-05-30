@@ -24,10 +24,11 @@
 
 其中百面计算机视觉我们汇总于此，在**Github**中如果图片或者公式发现出问题了，请你点击去原文地址哈～ 这里给出汇总的地址：[百面计算机视觉汇总贴](https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkzNDIxMzE1NQ==&action=getalbum&album_id=1860258784426672132&scene=173&from_msgid=2247485568&from_itemidx=1&count=3&nolastread=1#wechat_redirect)
 
-## 一. CV学习路线(如果想从事CV行业，那么可以参考这个学习路线)
+## 一. CV学习路线(没文章，学校不好，还想做cv算法？那就看看这个！)
 
 ![CV从业人员必会技能！！](https://user-images.githubusercontent.com/47493620/119588215-e8360b00-be02-11eb-8802-f1a840487c85.png)
 
+我写了一篇公众号博文：
 其中我整理相对应的**视频课**与**电子书**的**学习路线资料**，百度网盘链接：[下载地址](https://pan.baidu.com/s/18xxCQftI5GOCfZOB3VLTIQ)，密码：nj6k
 
 **若地址失效，可以加我微信，我发给你就好～**
