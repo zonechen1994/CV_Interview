@@ -72,6 +72,35 @@
 ![图$9$](https://files.mdnice.com/user/15207/67137807-39b5-450b-8fca-6526578438cb.png)
 
 ---
+**核心思想$7$：Label Smoothing**
+
+主要是为了消除训练过程中$label$-$dropout$的边缘效应。
+
+对于每一个训练$example$ $x$, 模型计算每个label $k \in\{1 \ldots K\}$ 的概率： $p(k \mid x)=\frac{\exp \left(z_{k}\right)}{\sum_{i=1}^{K} \exp \left(z_{i}\right)}$, 其中 $z_{i}$ 是logits或未归一化的对数概 率。
+训练集上单个example标签的实际概率分布（ground-truth distribution) 经过归一化后： $\sum_{k} q(k \mid x)=1$ 。为了简洁，我们忽略 $p$ 和 $q$ 对 $x$ 的依赖。我们定义单个example上的cross entropy为 $l=-\sum_{k=1}^{K} \log (p(k)) q(k)$ 。最小化cross entropy等价于最大化一个标签的对 数极大似然值的期望（expected log-likelihood of a label) , 这里标签是根据 $q(k)$ 选择的。cross entropy损失函数关于logits $z_{k}$ 是处处可 微的, 因此可以使用梯度下降来训练深度网络。其梯度有一个相当简单的形式： $\frac{\partial l}{\partial z_{k}}=p(k)-q(k)$, 它的范围是在-1 1之间。
+对于一个真实的标签 $y:$ 对于所有的 $k=y$ 的情况，要 $q(y)=1$ 并且 $q(y)=1_{\circ}$ 在这种情况下，最小化交叉嫡等价于最大化正确标签 的对数似然。对于一个标签为 $y$ 的example $x$, 最大化 $q(k)=\delta_{k, y}$ 时的对数似然，这里 $\delta_{k, y}$ 是狄拉克 $\delta$ 函数。在 $k=y$ 时，狄拉克函数王 于1, 其余等于0。通过训练，正确logit的 $z_{y}$ 应该远大于其它 $z_{k}(z /=y), z_{y}$ 越大越好，但大是一个无终点的事情。这能够导致两个问
+题, 1.导致过拟合：如果模型学习去将所有的概率分配到真实标签的逻辑单元上，泛化是没有保证的。2.它鼓励最大logit和其它logit的差 异 (KL距离) 越大越好，结合有界梯度（dounded gradient) $\frac{\partial l}{\partial z_{k}}$, 这降低了模型的适应能力。直觉上，适应能力的降低的原因应该是模 型对它的预测太过于自信。
+作者提出了一个鼓励模型不过于自信的机制。如果目标是最大化训练标签的对数似然，那么这可能不是我们想要的，它对模型进行了 正则并且使得模型的适应性更强。该方法是非常简单的。考虑一个独立于训练example $x$ 的标签分布 $u(k)$, 和一个smoothing参数 $\epsilon_{\circ}$ 对于 一个训练标签为 $y$ 的example, 我们替代标签分布 $q(k \mid x)=\delta_{k, y}$ 为
+$$
+q^{\prime}(k \mid x)=(1-\epsilon) \delta_{k, y}+\epsilon u(k)
+$$
+新的分布是原始标签分布和一个指定分布 $u(k)$ 的混合，两部分的权重为 $1-6$ 和 $\epsilon_{\text {。 }}$ 这可以看做标签 $k$ 的分布是通过如下方式获得的：首 先, set it to the ground-truth lable $k=y ;$ 然后, 以权重 $\epsilon$, replace $k$ with a sample drown from the distribution $u(k)$ 。作者建议去使用 标签的先验分布作为 $u(k)$ 。在我们的实验中，我们使用了均匀分布 $(u(k)=1 / K)$
+$$
+q^{\prime}(k)=(1-\epsilon) \delta_{k, y}+\frac{\epsilon}{K}
+$$
+我们将这种改变$ground$-$truth$ $label$分布的方法称为$label$ $-$ $smoothing$ $regulariation或者$ $L S R_{\text {。 }}$
+注意$LSR$达到了期望的目标：阻止最大的$logit$远大于其它$logit$。事实上，如果这发生了，则 $q(k)$ 将接近1, 而其它将接近0。这将导致一个很大的$cross-entropy$ $with$ $q^{\prime}(k)$, 因为, 不同于 $q(k)=\delta_{k, y}$, 所有的 $q^{\prime}(k)$ 有一个正的下界 ($positive$ $lower$ $bound$)
+$LSR$的另一种损失函数可以通过研究交叉嫡损失函数来获得
+$$
+H\left(q^{\prime}, p\right)=-\sum_{k=1}^{K} \log p(k) q^{\prime}(k)=(1-\epsilon) H(q, p)+\epsilon H(u, p)
+$$
+因此，$ LSR$等价于用一对损失函数 $H(q, p)$ 和 $H(u, p)$ 来代替单个损失函数 $H(q, p)$ 。损失函数的第二项惩罚了预测标签的分布和先验 分布 $u$ 的偏差with相对权重 $\frac{\epsilon}{1-\epsilon}$ 注意, 因为 $H(u, p)=D_{K L}(u \| p)+H(u)$, 所以该偏差可以被KL散度捕获。当 $u$ 是均匀分布的时候, $H(u, p)$ 衡量的是预测分布 $p$ 和均匀分布之间的相似性，该相似性可以用负嫡 $-H(p)$ 来衡量, 但两者并不相等。作者没有对这一替代进行 研究。
+在 ImageNet 中，因为有1000类, 所以作者令 $K=1000$ 。故 $u(k)=1 / 1000, \epsilon=0.1$ 。对于ILSVRC2012, 作者发现labelsmoothing regularization可以将top-1和top-5准确率提高$0.2\%$。
+
+
+
+网络结构展示：
+
 以下为$Inception$ $V3$使用到的$inception$模块的对应代码，分别是$InceptionA$—$InceptionE$。电脑上装好$Pytorch$和$torchvision$后，在本地$python$目录下的Lib\site-packages\torchvision\models中有详细的$Inception$ $V3$网络代码，有兴趣的小伙伴可以自行查看。
 
 
