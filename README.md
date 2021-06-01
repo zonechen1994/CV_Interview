@@ -65,8 +65,7 @@
 [指针与引用的区别](./C++与Python等工程篇/Pointer&References.md)  
 [多态与继承之间的区别](./C++与Python等工程篇/Inheritance&Polymorphism.md)   
 [重载、重写与重定义的区别](./C++与Python等工程篇/03.overload&override&redefine.md)   
-
-[构造函数与析构函数可以是虚函数吗？](./C++与Python等工程篇/04.Constructors & Destructors.md)
+[构造函数与析构函数可以是虚函数吗?](./C++与Python等工程篇/04.Constructors&Destructors.md)
 
 
 
