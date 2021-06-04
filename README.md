@@ -77,6 +77,7 @@
 [介绍下FCN与UNet](./图像分割与图像分类/fcn_unet.md)  
 [Inception系列之V1与V2](./图像分割与图像分类/InceptionV2V3.md)  
 [空洞卷积](./图像分割与图像分类/空洞卷积.md)  
+[语义分割loss汇总](./图像分割与图像分类/语义分割loss汇总.md)  
 
 
 
