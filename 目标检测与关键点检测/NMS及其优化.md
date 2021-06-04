@@ -1,13 +1,12 @@
-## $NMS$汇总
-
+## 面试必考 $NMS$汇总
 ### 1. $NMS$代码与实现
 
 **$Non$-$Maximum$-$Suppression$(非极大值抑制**): 当两个$box$空间位置非常接近，就以$score$更高的那个作为基准，看$IOU$即重合度如何，如果与其重合度超过阈值，就抑制$score$更小的$box$，只保留$score$大的就$Box$，其它的$Box$就都应该过滤掉。对于$NMS$而言，适合于水平框，针对各种不同形状的框，会有不同的$NMS$来进行处理。
 
 **具体的步骤如下**：
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210525171126839.png" alt="image-20210525171126839" style="zoom:50%;" />
 
+![](https://files.mdnice.com/user/6935/d16d78d9-7595-44bf-895c-4d88902c7c2c.jpg)
 
 
 1. 如图所示，我们有$6$个带置信率的$region$ $proposals$，我们先预设一个$IOU$的阈值如$0.7$。
@@ -62,7 +61,9 @@ def NMS(dets, thresh):
 
 运行后，则删除了多余的框，结果如图所示：
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210525171238666.png" alt="image-20210525171238666" style="zoom:50%;" />
+
+![](https://files.mdnice.com/user/6935/701bb3e8-0852-48fa-ad41-0ad7405d1c02.jpg)
+
 
 ### 2. $Soft$ $NMS$的代码与实现
 
@@ -70,19 +71,27 @@ def NMS(dets, thresh):
 
 - **物体重叠**：如下面第一张图，会有一个最高分数的框，如果使用$NMS$的话就会把其他置信度稍低，但是表示另一个物体的预测框删掉（由于和最高置信度的框$overlap$过大）
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210525165033892.png" alt="image-20210525165033892" style="zoom:69%;" />
+
+![](https://files.mdnice.com/user/6935/3c3b7605-fb13-4fae-a4f1-890f58e3f52d.png)
+
 
 - **所有的$bbox$都预测不准**：不是所有的框都那么精准，有时甚至会出现某个物体周围的所有框都标出来了，但是都不准的情况，如下图所示。
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210525165125135.png" alt="image-20210525165125135" style="zoom:72%;" />
+
+![](https://files.mdnice.com/user/6935/a85cd387-07aa-48aa-9bc2-1d08091d8bfe.jpg)
+
 
 - 传统的$NMS$方法是基于分类分数的，**只有最高分数的预测框能留下来，但是大多数情况下$IoU$和分类分数不是强相关**，很多分类标签置信度高的框都位置都不是很准。
 
-<img src="http://princepicbed.oss-cn-beijing.aliyuncs.com/blog_201812101536450850.png" alt="image-20181201140711790" style="zoom:40%;" />
+
+![](https://files.mdnice.com/user/6935/53b31a1c-b3ee-4cf3-a89b-4387c35ef46a.png)
+
 
 $Soft$ $NMS$主要是针对$NMS$过度删除框的问题。$Soft-NMS$吸取了$NMS$的教训，在算法执行过程中不是简单的对$IoU$大于阈值的检测框删除，而是降低得分。算法流程同$NMS$相同，但是对原置信度得分使用函数运算，目标是降低置信度得分。其算法步骤如下：
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210601223251721.png" alt="image-20210601223251721" style="zoom:58%;" />
+
+![](https://files.mdnice.com/user/6935/5b7c1277-7f4a-425c-9282-028af50cc829.png)
+
 
 红色的部分表示原始$NMS$算法，绿色部分表示$Soft$-$NMS$算法，区别在于，绿色的框只是把$s_{i}$降低了，而不是把$b_{i}$直接去掉，极端情况下，如果$f$只返回$0$，那么等同于普通的$NMS$。
 
@@ -92,13 +101,17 @@ $f$函数是为了降低目标框的置信度，满足条件，如果$b_{i}$和$
 
 经典的$NMS$算法将$IOU$大于阈值的窗口的得分全部置为$0$，可表述如下：
 
-$$s_{i}=\left\{\begin{array}{ll}s_{i}, & \operatorname{iou}\left(\mathcal{M}, b_{i}\right)<N_{t} \\ 0, & \operatorname{iou}\left(\mathcal{M}, b_{i}\right) \geq N_{t}\end{array}\right.$$
+
+![](https://files.mdnice.com/user/6935/77614fcf-2e82-4ea8-b56d-a5adc4477a6d.png)
+
 
 
 
 论文置信度重置函数有两种形式改进，**一种是线性加权的**：
 
-$s_{i}=\left\{\begin{array}{ll}s_{i}, & \operatorname{iou}\left(\mathcal{M}, b_{i}\right)<N_{t} \\ s_{i}\left(1-\operatorname{iou}\left(\mathcal{M}, b_{i}\right)\right), & \operatorname{iou}\left(\mathcal{M}, b_{i}\right) \geqslant N_{t}\end{array}\right.$
+
+![](https://files.mdnice.com/user/6935/3ba5aa4e-0473-41b1-8e06-0c5ccde66722.png)
+
 
 
 
@@ -251,7 +264,9 @@ $$
 
 如$faster$ $rcnn$中添加了$softer$ $nms$之后的示意图如图所示：
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210602130738970.png" alt="image-20210602130738970" style="zoom:50%;" />
+
+![](https://files.mdnice.com/user/6935/7f695b9d-bb97-4327-b9b4-00cd165d21a5.png)
+
 
 多加了一个$\sigma$预测，也就是$box$ $std$，而$Box$的预测其实就是上面公式中的$x_{e}$。
 
@@ -278,7 +293,8 @@ L_{\text {reg }}=\alpha\left(\left|x_{g}-x_{e}\right|-\frac{1}{2}\right)-\frac{1
 $$
 因此，计算过程如下图所示：
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210603223055035.png" alt="image-20210603223055035" style="zoom:63%;" />
+![](https://files.mdnice.com/user/6935/7ac68b67-df56-425d-a7b3-6c4d35e90d5c.png)
+
 
 网络预测出来的结果是$x1_{i}, y1_{i}, x2_{i}, y2_{i}, \sigma{x1_{i}}, \sigma{x2_{i}}, \sigma{x3_{i}}, \sigma{x4_{i}}$。前面四个为坐标，而后面四个是坐标的$\sigma$。
 
@@ -286,5 +302,6 @@ $$
 
 贴一张效果图：
 
-<img src="/Users/zonechen/Library/Application Support/typora-user-images/image-20210603222501310.png" alt="image-20210603222501310" style="zoom:70%;" />
+
+![](https://files.mdnice.com/user/6935/a4b87cf8-1881-4942-bf40-4b76b2803fb9.png)
 
