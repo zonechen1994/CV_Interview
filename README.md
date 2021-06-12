@@ -82,6 +82,8 @@
 [MobileNetV1](./图像分割与图像分类/MobileNet-V1.md)  
 [MobileNetV2](./图像分割与图像分类/MobileNet-V2.md)  
 [MobileNetV3](./图像分割与图像分类/MobileNet-V3.md)  
+[ShuffleNet-V1.md](./图像分割与图像分类/ShuffleNet-V1.md)  
+[ShuffleNet-V2.md](./图像分割与图像分类/ShuffleNet-V2.md)  
 
 #### 分割类
 [Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)  
@@ -93,9 +95,9 @@
 #### 目标检测
 [说下NMS？](./目标检测与关键点检测/nms.md).   
 [NMS及其优化](./目标检测与关键点检测/NMS及其优化.md)  
-[yolov1](./目标检测与关键点检测/yolov1.md)  
-[yolov2](./目标检测与关键点检测/yolov2.md)   
-[yolov3](./目标检测与关键点检测/yolov3.md)   
+[yolov1梳理](./目标检测与关键点检测/yolov1.md)  
+[yolov2梳理](./目标检测与关键点检测/yolov2.md)   
+[yolov3梳理](./目标检测与关键点检测/yolov3.md)   
 
 ### 6. 手撕代码汇总
 
