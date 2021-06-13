@@ -79,11 +79,11 @@
  
 
 #### 轻量化网络设计
-[MobileNetV1](./图像分割与图像分类/MobileNet-V1.md)  
-[MobileNetV2](./图像分割与图像分类/MobileNet-V2.md)  
-[MobileNetV3](./图像分割与图像分类/MobileNet-V3.md)  
-[ShuffleNet-V1.md](./图像分割与图像分类/ShuffleNet-V1.md)  
-[ShuffleNet-V2.md](./图像分割与图像分类/ShuffleNet-V2.md)  
+[MobileNetV1详解](./图像分割与图像分类/MobileNet-V1.md)  
+[MobileNetV2详解](./图像分割与图像分类/MobileNet-V2.md)  
+[MobileNetV3详解](./图像分割与图像分类/MobileNet-V3.md)  
+[ShuffleNet-V1详解](./图像分割与图像分类/ShuffleNet-V1.md)  
+[ShuffleNet-V2详解](./图像分割与图像分类/ShuffleNet-V2.md)  
 
 #### 分割类
 [Deep Lab v1~V3+](./图像分割与图像分类/DeepLab.md)  
