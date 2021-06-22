@@ -51,6 +51,8 @@
 [感受野](./深度学习基础/描述一下感受野.md)  
 [权重初始化](./深度学习基础/权重初始化的方法.md)   
 [label smoothing推导](./深度学习基础/labelsmoothing.md)  
+[重参数技巧的简述](./深度学习基础/reparameter.md)  
+
 
 
 
