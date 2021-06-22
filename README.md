@@ -80,6 +80,8 @@
 [Inception V1](./图像分割与图像分类/InceptionV1.md)   
 [InceptionV2V3](./图像分割与图像分类/InceptionV2V3.md)  
 [Inception4](./图像分割与图像分类/Inception4.md)  
+[xception](./图像分割与图像分类/xception.md)  
+ 
  
 
 #### 轻量化网络设计
