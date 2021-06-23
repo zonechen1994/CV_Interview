@@ -104,6 +104,8 @@
 [yolov1梳理](./目标检测与关键点检测/yolov1.md)  
 [yolov2梳理](./目标检测与关键点检测/yolov2.md)   
 [yolov3梳理](./目标检测与关键点检测/yolov3.md)   
+[Weighted_Boxes_Fusion](./目标检测与关键点检测/Weighted_Boxes_Fusion.md)  
+
 
 ### 6. 手撕代码汇总
 
