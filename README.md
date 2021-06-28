@@ -52,6 +52,8 @@
 [权重初始化](./深度学习基础/权重初始化的方法.md)   
 [label smoothing推导](./深度学习基础/labelsmoothing.md)  
 [重参数技巧的简述](./深度学习基础/reparameter.md)  
+[softmax及其相关变形](./深度学习基础/softmax及其相关变形.md)  
+
 
 
 
