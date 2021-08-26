@@ -119,8 +119,8 @@
 [卷积层与池化层前向与反向传播](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247488876&idx=1&sn=7566b562e7ec92c7b45686c6c1ece52c&chksm=c241f620f5367f36c85c85a91dc81c068d900961c0a65dc202373427b6b11b0459e828973eeb&token=2036211154&lang=zh_CN#rd)  
 [BatchNorm2d前向反向传播](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247488876&idx=1&sn=7566b562e7ec92c7b45686c6c1ece52c&chksm=c241f620f5367f36c85c85a91dc81c068d900961c0a65dc202373427b6b11b0459e828973eeb&token=2036211154&lang=zh_CN#rd)  
 [Flatten层前向与反向传播](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247488876&idx=1&sn=7566b562e7ec92c7b45686c6c1ece52c&chksm=c241f620f5367f36c85c85a91dc81c068d900961c0a65dc202373427b6b11b0459e828973eeb&token=2036211154&lang=zh_CN#rd)  
-[交叉熵损失函数前向与反向传播](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247488876&idx=1&sn=7566b562e7ec92c7b45686c6c1ece52c&chksm=c241f620f5367f36c85c85a91dc81c068d900961c0a65dc202373427b6b11b0459e828973eeb&token=2036211154&lang=zh_CN#rd). 
-[优化器代码](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247488876&idx=1&sn=7566b562e7ec92c7b45686c6c1ece52c&chksm=c241f620f5367f36c85c85a91dc81c068d900961c0a65dc202373427b6b11b0459e828973eeb&token=2036211154&lang=zh_CN#rd). 
+[交叉熵损失函数前向与反向传播](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247488876&idx=1&sn=7566b562e7ec92c7b45686c6c1ece52c&chksm=c241f620f5367f36c85c85a91dc81c068d900961c0a65dc202373427b6b11b0459e828973eeb&token=2036211154&lang=zh_CN#rd)  
+[优化器代码](https://mp.weixin.qq.com/s?__biz=MzkzNDIxMzE1NQ==&mid=2247488876&idx=1&sn=7566b562e7ec92c7b45686c6c1ece52c&chksm=c241f620f5367f36c85c85a91dc81c068d900961c0a65dc202373427b6b11b0459e828973eeb&token=2036211154&lang=zh_CN#rd)  
 
 ### 三. 如何写简历？
 
