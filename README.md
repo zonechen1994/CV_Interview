@@ -23,7 +23,7 @@
 
 ![扫码关注公众号](https://user-images.githubusercontent.com/47493620/118230064-9ff02200-b4bf-11eb-8cfb-501824bf4ecf.jpg)
 
-## 一. CV学习路线(没文章，学校不好，还想做cv算法？那就看看这个！)
+## 1. 写在前面，信心很重要！(背景不好，还想做CV吗？)
 
 ![CV从业人员必会技能！！](https://user-images.githubusercontent.com/47493620/119588215-e8360b00-be02-11eb-8802-f1a840487c85.png)
 
