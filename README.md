@@ -133,5 +133,5 @@
 **复旦在读博士。前bat算法工程师，94年的奶爸。双非材料本科出身，零基础跨专业考研到985cs专业。目前主要以计算机视觉算法入门与真题面经分享为主，持续更新《百面计算机视觉第三版》**
 
 
-![欢迎扫码加我微信](https://user-images.githubusercontent.com/47493620/118210526-14fe3000-b49d-11eb-8be1-ecc355fb11e2.jpeg)
+![image](https://user-images.githubusercontent.com/47493620/137040634-1aabfda6-c8dc-4905-94ce-03eb5b800455.png)
 
