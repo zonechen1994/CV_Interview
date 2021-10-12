@@ -21,7 +21,7 @@
 - **我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
 
 
-![image](https://user-images.githubusercontent.com/47493620/137040451-bea84256-afc5-43ef-ac40-61c7676f1338.png)
+![image](https://user-images.githubusercontent.com/47493620/137040561-89e9a8c7-a417-4dfd-9446-4b9cfa1190e8.png)
 
 ## 1. 写在前面，信心很重要！(背景不好，还想做CV吗？)
 
