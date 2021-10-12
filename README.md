@@ -19,7 +19,7 @@
 - **我们会将面经，首发于公众号"灿视学长"中，欢迎各位扫码关注！**
 
 
-![qrcode_for_gh_13e431216f44_344 (3)](https://user-images.githubusercontent.com/47493620/118230064-9ff02200-b4bf-11eb-8cfb-501824bf4ecf.jpg)
+![扫码关注公众号](https://user-images.githubusercontent.com/47493620/118230064-9ff02200-b4bf-11eb-8cfb-501824bf4ecf.jpg)
 
 ## 一. CV学习路线(没文章，学校不好，还想做cv算法？那就看看这个！)
 
@@ -131,5 +131,5 @@
 **复旦在读博士。前bat算法工程师，94年的奶爸。双非材料本科出身，零基础跨专业考研到985cs专业。目前主要以计算机视觉算法入门与真题面经分享为主，持续更新《百面计算机视觉第三版》**
 
 
-![欢迎加我微信](https://user-images.githubusercontent.com/47493620/118210526-14fe3000-b49d-11eb-8be1-ecc355fb11e2.jpeg)
+![欢迎扫码加我微信](https://user-images.githubusercontent.com/47493620/118210526-14fe3000-b49d-11eb-8be1-ecc355fb11e2.jpeg)
 
