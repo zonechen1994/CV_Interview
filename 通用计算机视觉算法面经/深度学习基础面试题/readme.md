@@ -24,7 +24,7 @@
 
 [12. 在Backbone不变的情况下，若显存有限，如何增大训练时的batchsize]('./enlarge_bs.md')
 
-[13. 描述一下IOU]('./IOU.md')
+[13. 描述一下IOU]('IOU.md')
 
 [14. 描述一下L1与L2的比较]('./L1与L2正则的比较.md')
 
