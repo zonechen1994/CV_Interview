@@ -1,0 +1,1 @@
+![](https://files.mdnice.com/user/6935/aa3b5c03-ccec-4073-bb90-cec538d70a60.png)
