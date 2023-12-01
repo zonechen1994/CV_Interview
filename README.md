@@ -61,7 +61,7 @@ A：**因为，我也是一个转行的算法工程师**。我本科的专业是
 
 
 
-![WechatIMG1273](https://github.com/zonechen1994/CV_Interview/assets/47493620/0d108ff7-7fda-42c4-b164-981eb0e564b2)
+![WechatIMG14](https://github.com/zonechen1994/CV_Interview/assets/47493620/c2b05295-e718-446e-bc66-3a0a6fea7632)
 
 
 
